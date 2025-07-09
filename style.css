@@ -687,7 +687,7 @@ input[type=submit].btn-primary {
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 128rem;
+	width: 100%;
 	z-index: -1;
 	height: 100%;
 }
@@ -5474,12 +5474,19 @@ input[type=submit] {
 	}
 }
 
+@media screen and (max-width: 526px) {
+	.top_label_person.sp_third .top_person_right::after {
+		border-width: 0 22px 226px 0;
+		left: -22px;
+	}
+}
+
 
 
 
 @media (max-width: 500px) {
 	.top_label_person.sp_third .top_person_right::after {
-		border-width: 0 22px 116.5px 0;
+		border-width: 0 22px 91px 0;
 		left: -22px;
 	}
 
@@ -5799,6 +5806,13 @@ input[type=submit] {
 	}
 }
 
+@media (max-width: 448px) {
+	.top_label_person.sp_third .top_person_right::after {
+		border-width: 0 22px 116.8px 0;
+		left: -22px;
+	}
+}
+
 @media (max-width: 400px) {
 	.prob__lits>li {
 		width: 25em;
@@ -5807,7 +5821,7 @@ input[type=submit] {
 	}
 
 	.top_label_person.sp_third .top_person_right::after {
-		border-width: 0 22px 118.5px 0;
+		border-width: 0 22px 116.5px 0;
 		left: -22px;
 	}
 
@@ -5827,7 +5841,14 @@ input[type=submit] {
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 389px) {
+	.top_label_person.sp_third .top_person_right::after {
+		border-width: 0 22px 118.5px 0;
+		left: -22px;
+	}
+}
+
+@media (max-width: 374px) {
 	.top_label_person.sp_third .top_person_right::after {
 		border-width: 0 22px 118.5px 0;
 		left: -22px;
@@ -5842,7 +5863,7 @@ input[type=submit] {
 	.p-about__box {
 		width: 100%;
 		margin: 0rem auto 0;
-		padding: 3rem 1.9rem 15rem;
+		padding: 3rem 1.9rem 15.1rem;
 	}
 
 	.p-about__pic {
@@ -5850,6 +5871,13 @@ input[type=submit] {
 		bottom: auto;
 		top: 33rem;
 		right: 1.1rem;
+	}
+}
+
+@media (max-width: 362px) {
+	.top_label_person.sp_third .top_person_right::after {
+		border-width: 0 22px 116.5px 0;
+		left: -22px;
 	}
 }
 
@@ -5882,6 +5910,13 @@ input[type=submit] {
 		width: 23em;
 		padding-top: 3em;
 		padding-bottom: 2.5em;
+	}
+}
+
+@media (max-width: 351px) {
+	.top_label_person.sp_third .top_person_right::after {
+		border-width: 0 22px 142px 0;
+		left: -22px;
 	}
 }
 
