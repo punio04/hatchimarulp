@@ -1276,7 +1276,7 @@ body:has(#wpadminbar) .header {
 
 	.prob__lits {
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: wrap!important;
 		gap: 3em;
 		margin-bottom: 5em;
 		justify-content: center;
