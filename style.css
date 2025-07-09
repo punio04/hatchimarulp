@@ -5819,6 +5819,15 @@ input[type=submit] {
 	}
 }
 
+@media (max-width: 480px) {
+	.p-about__pic {
+		width: 14.1rem;
+		bottom: auto;
+		top: 30rem;
+		right: 1.1rem;
+	}
+}
+
 @media (max-width: 448px) {
 	.top_label_person.sp_third .top_person_right::after {
 		border-width: 0 22px 116.8px 0;
@@ -5900,6 +5909,15 @@ input[type=submit] {
 	}
 }
 
+@media (max-width: 361px) {
+	.p-about__pic {
+		width: 12rem;
+		bottom: auto;
+		top: 36.1rem;
+		right: 1.1rem;
+	}
+}
+
 @media (max-width: 360px) {
 	.top_label_person.sp_third .top_person_right::after {
 		border-width: 0 22px 116.5px 0;
@@ -5922,7 +5940,7 @@ input[type=submit] {
 	.p-about__box {
 		width: 100%;
 		margin: 0rem auto 0;
-		padding: 3rem 1.9rem 16rem;
+		padding: 3rem 1.9rem 16.1rem;
 	}
 
 	.prob__lits>li {
@@ -5939,6 +5957,14 @@ input[type=submit] {
 	}
 }
 
+@media (max-width: 348px) {
+	.p-about__box {
+		width: 100%;
+		margin: 0rem auto 0;
+		padding: 3rem 1.9rem 13rem;
+	}
+}
+
 @media (max-width: 344px) {
 	.top_label_person.sp_third .top_person_right::after {
 		border-width: 0 22px 142px 0;
@@ -5949,6 +5975,22 @@ input[type=submit] {
 		width: 100%;
 		margin: 0rem auto 0;
 		padding: 3rem 1.9rem 13rem;
+	}
+}
+
+@media (max-width: 340px) {
+	.prob__lits>li {
+		width: 22em;
+		padding-top: 3em;
+		padding-bottom: 2.5em;
+	}
+}
+
+@media (max-width: 326px) {
+	.prob__lits>li {
+		width: 21em;
+		padding-top: 3em;
+		padding-bottom: 2.5em;
 	}
 }
 
