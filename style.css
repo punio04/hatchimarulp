@@ -5194,7 +5194,9 @@ input[type=submit].btn-primary {
 		padding: 0;
 	}
 
-
+	textarea.form-control {
+		font-size: 16px;
+	}
 
 	.p-fv {
 		background-image: url(img/fv_sp.jpg);
