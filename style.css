@@ -1439,7 +1439,7 @@ body:has(#wpadminbar) .header {
 	}
 
 	.prob__lits>li {
-		width: 34em;
+		width: 33em;
 		padding-top: 3em;
 		padding-bottom: 2.5em;
 	}
@@ -1509,7 +1509,7 @@ body:has(#wpadminbar) .header {
 		flex-wrap: wrap;
 		row-gap: 6em;
 		column-gap: 3em;
-		width: 88%;
+		width: 86%;
 		justify-content: flex-end;
 	}
 
@@ -1519,7 +1519,7 @@ body:has(#wpadminbar) .header {
 		align-items: center;
 		justify-content: flex-start;
 		gap: 0 4em;
-		width: 42.5em;
+		width: 41.5em;
 		padding: 3em 0 6em 0;
 	}
 
@@ -5378,8 +5378,19 @@ input[type=submit] {
 		font-size: 4.2666666667vw;
 	}
 
+	.prob__lits {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 3em;
+		align-items: stretch;
+		width: 90%;
+		padding: 3em 0 1em 0;
+		align-content: center;
+		margin: 0 auto 0em;
+	}
+
 	.prob__lits>li {
-		width: 30em;
+		width:29em;
 		padding-top: 3em;
 		padding-bottom: 2.5em;
 	}
@@ -5588,7 +5599,7 @@ input[type=submit] {
 	}
 
 	.prob__lits>li {
-		width: 26em;
+		width: 25em;
 		padding-top: 3em;
 		padding-bottom: 2.5em;
 	}
@@ -5646,7 +5657,7 @@ input[type=submit] {
 	}
 
 	.prob__lits>li {
-		width: 22em;
+		width: 21em;
 		padding-top: 3em;
 		padding-bottom: 2.5em;
 	}
