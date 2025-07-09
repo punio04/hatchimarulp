@@ -5327,7 +5327,7 @@ input[type=submit] {
 	}
 
 	.top_label_person.sp_third .right_sp::after {
-		border-width: 0 22px 88.5px 0 !important;
+		border-width: 0 22px 90px 0 !important;
 		left: -22px;
 	}
 
