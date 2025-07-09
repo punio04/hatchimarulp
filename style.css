@@ -937,7 +937,7 @@ input[type=submit].btn-primary {
 
 	.p-about__bg {
 		width: 100%;
-		height: -webkit-fill-available;
+		height: 100%;
 	}
 
 	.p-about__box {
@@ -5486,17 +5486,21 @@ input[type=submit] {
 	}
 
 	.example-pic {
-		width: 42%;
+		width: 30%;
 		margin: 0 auto;
+	}
+
+	.privacypolicy .p-privacypolicy {
+		padding: 45px 20px 1px 20px;
 	}
 
 	.p-example__item {
 		width: 100%;
-		padding: 2.5rem 1.5rem 5rem;
+		padding: 2rem 1.5rem 2rem;
 	}
 
 	.p-recom__txt01 {
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 
 	.red_txt {
@@ -5549,6 +5553,31 @@ input[type=submit] {
 
 	.top_label_person.sp_third .top_person_left .top_person_flex .top_person_text {
 		margin: 0px 0px 0 92px;
+	}
+
+	.btn-primary-wrap::after {
+		top: 55%;
+	}
+}
+
+@media (max-width: 400px) {
+	.prob__lits>li {
+		width: 27em;
+		padding-top: 3em;
+		padding-bottom: 2.5em;
+	}
+
+	.top_label_person.sp_third .top_person_right::after {
+		border-width: 0 22px 118.5px 0;
+		left: -22px;
+	}
+
+	#one_part .one_part_bottom .inner .one_part_ex .sp_graybg .example_box .example_text span {
+		font-size: 15px;
+	}
+
+	#one_part .one_part_bottom .inner .one_part_ex .sp_graybg .example_box .example_text {
+		font-size: 15px;
 	}
 }
 
