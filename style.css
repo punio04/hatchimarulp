@@ -5876,8 +5876,12 @@ input[type=submit] {
 
 @media (max-width: 374px) {
 	.top_label_person.sp_third .top_person_right::after {
-		border-width: 0 22px 118.5px 0;
+		border-width: 0 22px 118px 0;
 		left: -22px;
+	}
+
+	.top_label_person .top_person_right {
+		height: 118px;
 	}
 
 	.p-about__box {
