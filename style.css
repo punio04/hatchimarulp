@@ -1276,7 +1276,7 @@ body:has(#wpadminbar) .header {
 
 	.prob__lits {
 		display: flex;
-		flex-wrap: wrap!important;
+		flex-wrap: wrap !important;
 		gap: 3em;
 		margin-bottom: 5em;
 		justify-content: center;
@@ -5632,9 +5632,9 @@ input[type=submit] {
 	}
 
 	.prob__lits>li {
-		width: 26em;
-		padding-top: 3em;
-		padding-bottom: 2.5em;
+		width: 100%;
+		padding-top: 2em;
+		padding-bottom: 2em;
 	}
 
 	.mt20[data-v-de34eede] {
@@ -5792,6 +5792,19 @@ input[type=submit] {
 		margin-top: 2rem;
 	}
 
+	.prob__lits>li .pic {
+		margin-bottom: 0;
+		margin-top: 3em;
+		width: 38%;
+	}
+
+	.prob__lits>li p {
+		display: block;
+		margin: 2em auto 0;
+		text-align: center;
+		padding: 0 25px;
+	}
+
 	.prob__lits>li p span {
 		font-size: 1.4rem;
 		padding: 0px;
@@ -5836,12 +5849,6 @@ input[type=submit] {
 }
 
 @media (max-width: 400px) {
-	.prob__lits>li {
-		width: 25em;
-		padding-top: 3em;
-		padding-bottom: 2.5em;
-	}
-
 	.top_label_person.sp_third .top_person_right::after {
 		border-width: 0 22px 116.5px 0;
 		left: -22px;
@@ -5876,12 +5883,6 @@ input[type=submit] {
 		left: -22px;
 	}
 
-	.prob__lits>li {
-		width: 25em;
-		padding-top: 3em;
-		padding-bottom: 2.5em;
-	}
-
 	.p-about__box {
 		width: 100%;
 		margin: 0rem auto 0;
@@ -5893,12 +5894,6 @@ input[type=submit] {
 		bottom: auto;
 		top: 33rem;
 		right: 1.1rem;
-	}
-
-	.prob__lits>li {
-		width: 24em;
-		padding-top: 3em;
-		padding-bottom: 2.5em;
 	}
 }
 
@@ -5942,12 +5937,6 @@ input[type=submit] {
 		margin: 0rem auto 0;
 		padding: 3rem 1.9rem 16.1rem;
 	}
-
-	.prob__lits>li {
-		width: 23em;
-		padding-top: 3em;
-		padding-bottom: 2.5em;
-	}
 }
 
 @media (max-width: 351px) {
@@ -5975,22 +5964,6 @@ input[type=submit] {
 		width: 100%;
 		margin: 0rem auto 0;
 		padding: 3rem 1.9rem 13rem;
-	}
-}
-
-@media (max-width: 340px) {
-	.prob__lits>li {
-		width: 22em;
-		padding-top: 3em;
-		padding-bottom: 2.5em;
-	}
-}
-
-@media (max-width: 326px) {
-	.prob__lits>li {
-		width: 21em;
-		padding-top: 3em;
-		padding-bottom: 2.5em;
 	}
 }
 
@@ -6036,12 +6009,6 @@ input[type=submit] {
 		width: 100%;
 		margin: 0rem auto 0;
 		padding: 3rem 1.9rem 15.1rem;
-	}
-
-	.prob__lits>li {
-		width: 21em;
-		padding-top: 3em;
-		padding-bottom: 2.5em;
 	}
 
 	.p-fv-b__txt02 {
