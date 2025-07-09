@@ -486,7 +486,7 @@ input[type=submit].btn-primary {
 	transform: skew(-10deg);
 	color: #ff6600;
 	font-weight: bolder;
-	text-shadow: 0 0 22px #ffffff8a, 0 0 15px #ffffff9e, 0 0 26px #ffffffc2;
+	text-shadow: 0 0 22px #ffffff40, 0 0 15px #ffffff87, 0 0 26px #ffffffc9;
 }
 
 .red {
@@ -894,8 +894,70 @@ input[type=submit].btn-primary {
 @media screen and (min-width: 1281px) {
 
 	.p-about__bg {
-		width: 100%;
+		width: 240em;
 		height: 100%;
+	}
+
+	#container {
+		background: #f6f6f6;
+		width: 240em;
+		margin: 0 auto;
+	}
+
+	.p-contact {
+		width: 240em;
+		margin: 0 auto;
+	}
+
+	.p-fv {
+		width: 240em;
+		margin: 0 auto;
+	}
+
+	.c-page-home__select {
+		width: 240em;
+		margin: 0 auto 360px;
+	}
+
+	.sec07[data-v-de34eede] {
+		padding: 6.3rem 0;
+		background: #fffcda;
+		width: 240em;
+		margin: 0 auto;
+	}
+
+	.inner {
+		width: 240em;
+		margin: 0 auto;
+	}
+
+	.p-example {
+		padding: 6.3rem 0 6.3rem;
+		background-color: #FFFCDA;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		width: 240em;
+		margin: 0 auto;
+	}
+
+	.section-faq {
+		background-color: #fffcda;
+		width: 240em;
+		margin: 0 auto;
+	}
+
+	.section-faq>.in {
+		padding: 6.3rem 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.p-footer {
+		padding: 1.5rem 0 1.5rem;
+		background-color: #ffcd20;
+		width: 240em;
+		margin: 0 auto;
 	}
 
 }
@@ -1145,7 +1207,7 @@ input[type=submit].btn-primary {
 .prob {
 	padding: 6.3rem 0;
 	background: url("img/prob_bg.jpg") no-repeat center top;
-	background-size: 100%;
+	background-size: 240em;
 	text-align: center;
 }
 
@@ -1397,6 +1459,7 @@ body:has(#wpadminbar) .header {
 	.prob {
 		padding-top: 5em;
 		padding-bottom: 5em;
+		background-size: 100%;
 	}
 
 	.prob__head {
@@ -2796,6 +2859,13 @@ img {
 	margin-right: 8vw;
 }
 
+@media screen and (min-width: 1281px) {
+	.inner {
+		width: 240em;
+		margin: 0 auto;
+	}
+}
+
 p {
 	color: #484848;
 }
@@ -2870,7 +2940,7 @@ p {
 }
 
 .top_label_person .top_person_left .top_person_img img.top_label_person05 {
-	width: 100%;
+	width: 354px;
 	height: auto;
 }
 
@@ -3376,7 +3446,7 @@ p {
 	}
 
 	.top_label_person.sp_third .right_sp::after {
-		border-width: 0 22px 113px 0 !important;
+		border-width: 0 22px 123px 0 !important;
 		left: -22px;
 	}
 
@@ -4255,14 +4325,6 @@ p {
 	}
 }
 
-@media (min-width: 1441px) {
-	.section-faq>.in {
-		padding: 6.3rem 0;
-		margin-left: 16vw;
-		margin-right: 16vw
-	}
-}
-
 .content-faq>.in {
 	background: #fff;
 	border-radius: 8px;
@@ -4600,6 +4662,7 @@ section {
 .p-footer {
 	padding: 1.5rem 0 1.5rem;
 	background-color: #ffcd20;
+	width: 100%;
 }
 
 .p-footer__copy {
@@ -4852,9 +4915,7 @@ input[type=submit].btn-primary {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 100%;
 	height: auto;
-	/* margin-top: 6rem; */
 }
 
 .p-contact__inner {
