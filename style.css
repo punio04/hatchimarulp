@@ -385,20 +385,6 @@ img {
 	margin-right: 1rem;
 }
 
-input[type=text].form-control,
-input[type=email].form-control {
-	width: 100%;
-	height: 3rem;
-	font-size: 1.2rem;
-	font-family: "line-re";
-	border: 0.1rem solid #afafaf;
-	border-radius: 0.6rem;
-	box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.16);
-	margin-top: 0.7rem;
-	padding: 0 1.9rem;
-	letter-spacing: 0;
-}
-
 .btn-primary-wrap {
 	width: 93%;
 	height: 3.8rem;
@@ -5149,6 +5135,10 @@ input[type=submit].btn-primary {
 		width: 100%;
 	}
 
+	textarea#form_reply_values_attributes_4_value {
+		font-size: 16px;
+	}
+
 	.form-fields .form-field:nth-of-type(3) {
 		display: block;
 		width: 100%;
@@ -5164,12 +5154,6 @@ input[type=submit].btn-primary {
 		font-size: 1.4rem;
 		border-radius: 0.5rem;
 		margin-right: 1.5rem;
-	}
-
-	input[type=text].form-control,
-	input[type=email].form-control {
-		height: 4.2rem;
-		font-size: 1.4rem;
 	}
 
 	.btn-primary-wrap {
@@ -5300,7 +5284,7 @@ input[type=submit].btn-primary {
 	input[type=text].form-control,
 	input[type=email].form-control {
 		height: 4.2rem;
-		font-size: 1.4rem;
+		font-size: 16px;
 	}
 
 	.btn-primary-wrap {
