@@ -4639,6 +4639,19 @@ input[type=email].form-control {
 	position: relative;
 }
 
+textarea.form-control {
+	width: 100%;
+	height: 3rem;
+	font-size: 1.2rem;
+	font-family: "line-re";
+	border: 0.1rem solid #afafaf;
+	border-radius: 0.6rem;
+	box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.16);
+	margin-top: 0.7rem;
+	padding: 6px 1.9rem;
+	letter-spacing: 0;
+}
+
 .btn-primary-wrap::after {
 	content: "";
 	position: absolute;

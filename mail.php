@@ -4,24 +4,18 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require __DIR__ . '/vendor/autoload.php';
-
-
 $config = require('env.php');
 
+// 必須項目チェック
 $required = ['お名前', 'メールアドレス', 'ご相談内容'];
-
 $errors = [];
 foreach ($required as $field) {
     if (empty($_POST[$field])) {
         $errors[] = "【{$field}】は必須項目です。";
     }
 }
-
 if (!empty($errors)) {
-    foreach ($errors as $error) {
-        echo "<p style='color:red;'>{$error}</p>";
-    }
-    echo "<p><a href='javascript:history.back()'>戻る</a></p>";
+    echo 'error';
     exit;
 }
 
@@ -32,7 +26,7 @@ $ip = $_SERVER['REMOTE_ADDR'] ?? '';
 $referer = $_SERVER['HTTP_REFERER'] ?? '';
 $now = date('Y/m/d (D) H:i:s');
 
-// 内容フォーマット
+// メール本文作成
 $message = '';
 foreach ($_POST as $key => $value) {
     if ($key !== 'submit') {
@@ -40,7 +34,6 @@ foreach ($_POST as $key => $value) {
     }
 }
 
-// 管理者宛
 $adminBody = <<<EOM
 「ランディングページのお問い合わせ」からメールが届きました
 
@@ -53,7 +46,6 @@ $adminBody = <<<EOM
 問い合わせのページURL：{$referer}
 EOM;
 
-// 自動返信
 $userBody = <<<EOM
 {$name} 様
 
@@ -72,7 +64,7 @@ $userBody = <<<EOM
 送信日時：{$now}
 EOM;
 
-// SMTP設定
+// SMTP設定関数
 function setupMailer($config)
 {
     $mail = new PHPMailer(true);
@@ -88,7 +80,7 @@ function setupMailer($config)
 }
 
 try {
-    // 管理者宛
+    // 管理者宛メール送信
     $mail = setupMailer($config);
     $mail->setFrom($config['smtp_user'], 'ハチマルライティング');
     $mail->addAddress('egaku-career@pdc.co.jp');
@@ -105,8 +97,9 @@ try {
     $mail2->Body = $userBody;
     $mail2->send();
 
-    header('Location: https://www.pdc.co.jp/hr-service/egaku-career/thanks_lp01');
+    echo 'success'; // JS側で判定に使用
     exit;
 } catch (Exception $e) {
-    echo "送信に失敗しました：{$mail->ErrorInfo}";
+    echo 'error';
+    exit;
 }

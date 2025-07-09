@@ -43,92 +43,48 @@
               <p class="p-form__txt02">ご相談・お問い合わせ<br class="sp">フォーム</p>
             </div>
             <p></p>
-            <form class="custom-form mediatieup_dekirukun_inquiry_fv_lp" action="mail.php" accept-charset="UTF-8"
-              method="post">
-              <input type="hidden" name="authenticity_token"
-                value="L0iS3VVbWlpJrqPgX6f8eI4Enh-1z7C91xlkAkOoS2Z7vA8IHGncmjV1FaasZTpxenuFQ5KMpCLsZlXYCyQrAQ"
-                autocomplete="off"><input autocomplete="off" type="hidden" value="284" name="form_reply[form_id]"
-                id="form_reply_form_id">
+            <form class="custom-form" action="mail.php" accept-charset="UTF-8" method="post">
               <div class="form-fields">
+
+                <!-- お名前 -->
                 <div class="row form-field">
                   <div class="col-sm-12">
-                    <div class="form-group"><input value="446" autocomplete="off" type="hidden"
-                        name="form_reply[values_attributes][0][form_field_id]"
-                        id="form_reply_values_attributes_0_form_field_id">
-                      <div class="form-group form_text required"><label><small class="text-danger">必須</small>
-                          お名前</label>
-                        <div><input class="form-control" placeholder="山田太郎" required="required" type="text"
-                            name="form_reply[values_attributes][0][value]" id="form_reply_values_attributes_0_value">
-                        </div>
-                      </div>
+                    <div class="form-group form_text required">
+                      <label><small class="text-danger">必須</small> お名前</label>
+                      <input class="form-control" placeholder="山田太郎" required type="text" name="お名前">
                     </div>
                   </div>
                 </div>
+
+                <!-- メールアドレス -->
                 <div class="row form-field">
                   <div class="col-sm-12">
-                    <div class="form-group"><input value="468" autocomplete="off" type="hidden"
-                        name="form_reply[values_attributes][3][form_field_id]"
-                        id="form_reply_values_attributes_3_form_field_id">
-                      <div class="form-group form_sender required"><label><small class="text-danger">必須</small>
-                          メールアドレス</label>
-                        <div><input class="form-control" placeholder="mail@gmail.com" required="required" type="email"
-                            name="form_reply[values_attributes][3][value]" id="form_reply_values_attributes_3_value">
-                        </div>
-                      </div>
+                    <div class="form-group form_sender required">
+                      <label><small class="text-danger">必須</small> メールアドレス</label>
+                      <input class="form-control" placeholder="mail@gmail.com" required type="email" name="メールアドレス">
                     </div>
                   </div>
                 </div>
+
+                <!-- ご相談内容 -->
                 <div class="row form-field">
                   <div class="col-sm-12">
-                    <div class="form-group">
-                      <input value="449" autocomplete="off" type="hidden" name="form_reply[values_attributes][4][form_field_id]"
-                        id="form_reply_values_attributes_4_form_field_id">
-                      <div class="form-group form_text required">
-                        <label><small class="text-danger">必須</small> ご相談内容</label>
-                        <div>
-                          <textarea class="form-control" placeholder="ご相談内容を入力してください" required="required"
-                            name="form_reply[values_attributes][4][value]" id="form_reply_values_attributes_4_value"
-                            style="height: 9rem; width: 100%;"></textarea>
-                        </div>
-                      </div>
+                    <div class="form-group form_text required">
+                      <label><small class="text-danger">必須</small> ご相談内容</label>
+                      <textarea class="form-control" placeholder="ご相談内容を入力してください" required name="ご相談内容"
+                        style="height: 9rem; width: 100%;"></textarea>
                     </div>
                   </div>
                 </div>
-                <div class="btn-primary-wrap"><input class="btn btn-primary submit" type="submit" value="送信する"></div>
+
+                <!-- 送信ボタン -->
+                <div class="btn-primary-wrap">
+                  <input class="btn btn-primary submit" type="submit" value="送信する">
+                </div>
+
               </div>
             </form>
           </div>
-
-          <div data-alert-message="1つ以上のチェックが必要な項目があります。" id="alert-message" style="display: none;"></div>
-          <script>window.loadedCustomFormScript = true;
-            {
-              const userAgent = window.navigator.userAgent.toLowerCase();
-              const isIE = userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1;
-              const buttons = document.querySelectorAll('form.custom-form input.btn.submit');
-              const button = buttons[buttons.length - 1];
-              const form = button.parentNode.parentNode;
-              form.addEventListener('submit', function (submitEvent) {
-                button.setAttribute('disabled', 'true');
-              });
-              button.addEventListener('click', function (clickEvent) {
-                let requireChecked = 0;
-                const checkFields = form.querySelectorAll('.form_checkbox.required');
-                for (let ci = 0; ci < checkFields.length; ci++) {
-                  const field = checkFields[ci];
-                  const checks = field.querySelectorAll('input[type=checkbox]:checked');
-                  if (checks.length === 0) {
-                    requireChecked++;
-                  }
-                }
-                if (isIE || form.reportValidity()) {
-                  if (requireChecked > 0) {
-                    alert(document.getElementById('alert-message').getAttribute('data-alert-message'));
-                    clickEvent.stopPropagation();
-                    clickEvent.preventDefault();
-                  }
-                }
-              }, { passive: false });
-            }</script>
         </div>
       </section>
 
@@ -899,92 +855,48 @@
               <p class="p-contact__txt02">ご相談・お問い合わせ<br class="sp">フォーム</p>
             </div>
             <p></p>
-            <form class="custom-form mediatieup_dekirukun_inquiry_fv_lp" action="mail.php" accept-charset="UTF-8"
-              method="post">
-              <input type="hidden" name="authenticity_token"
-                value="L0iS3VVbWlpJrqPgX6f8eI4Enh-1z7C91xlkAkOoS2Z7vA8IHGncmjV1FaasZTpxenuFQ5KMpCLsZlXYCyQrAQ"
-                autocomplete="off"><input autocomplete="off" type="hidden" value="284" name="form_reply[form_id]"
-                id="form_reply_form_id">
+            <form class="custom-form" action="mail.php" accept-charset="UTF-8" method="post">
               <div class="form-fields">
+            
+                <!-- お名前 -->
                 <div class="row form-field">
                   <div class="col-sm-12">
-                    <div class="form-group"><input value="446" autocomplete="off" type="hidden"
-                        name="form_reply[values_attributes][0][form_field_id]"
-                        id="form_reply_values_attributes_0_form_field_id">
-                      <div class="form-group form_text required"><label><small class="text-danger">必須</small>
-                          お名前</label>
-                        <div><input class="form-control" placeholder="山田太郎" required="required" type="text"
-                            name="form_reply[values_attributes][0][value]" id="form_reply_values_attributes_0_value">
-                        </div>
-                      </div>
+                    <div class="form-group form_text required">
+                      <label><small class="text-danger">必須</small> お名前</label>
+                      <input class="form-control" placeholder="山田太郎" required type="text" name="お名前">
                     </div>
                   </div>
                 </div>
+            
+                <!-- メールアドレス -->
                 <div class="row form-field">
                   <div class="col-sm-12">
-                    <div class="form-group"><input value="468" autocomplete="off" type="hidden"
-                        name="form_reply[values_attributes][3][form_field_id]"
-                        id="form_reply_values_attributes_3_form_field_id">
-                      <div class="form-group form_sender required"><label><small class="text-danger">必須</small>
-                          メールアドレス</label>
-                        <div><input class="form-control" placeholder="mail@gmail.com" required="required" type="email"
-                            name="form_reply[values_attributes][3][value]" id="form_reply_values_attributes_3_value">
-                        </div>
-                      </div>
+                    <div class="form-group form_sender required">
+                      <label><small class="text-danger">必須</small> メールアドレス</label>
+                      <input class="form-control" placeholder="mail@gmail.com" required type="email" name="メールアドレス">
                     </div>
                   </div>
                 </div>
+            
+                <!-- ご相談内容 -->
                 <div class="row form-field">
                   <div class="col-sm-12">
-                    <div class="form-group">
-                      <input value="449" autocomplete="off" type="hidden" name="form_reply[values_attributes][4][form_field_id]"
-                        id="form_reply_values_attributes_4_form_field_id">
-                      <div class="form-group form_text required">
-                        <label><small class="text-danger">必須</small> ご相談内容</label>
-                        <div>
-                          <textarea class="form-control" placeholder="ご相談内容を入力してください" required="required"
-                            name="form_reply[values_attributes][4][value]" id="form_reply_values_attributes_4_value"
-                            style="height: 9rem; width: 100%;"></textarea>
-                        </div>
-                      </div>
+                    <div class="form-group form_text required">
+                      <label><small class="text-danger">必須</small> ご相談内容</label>
+                      <textarea class="form-control" placeholder="ご相談内容を入力してください" required name="ご相談内容"
+                        style="height: 9rem; width: 100%;"></textarea>
                     </div>
                   </div>
                 </div>
-                <div class="btn-primary-wrap"><input class="btn btn-primary submit" type="submit" value="送信する"></div>
+            
+                <!-- 送信ボタン -->
+                <div class="btn-primary-wrap">
+                  <input class="btn btn-primary submit" type="submit" value="送信する">
+                </div>
+            
               </div>
             </form>
           </div>
-
-          <div data-alert-message="1つ以上のチェックが必要な項目があります。" id="alert-message" style="display: none;"></div>
-          <script>window.loadedCustomFormScript = true;
-            {
-              const userAgent = window.navigator.userAgent.toLowerCase();
-              const isIE = userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1;
-              const buttons = document.querySelectorAll('form.custom-form input.btn.submit');
-              const button = buttons[buttons.length - 1];
-              const form = button.parentNode.parentNode;
-              form.addEventListener('submit', function (submitEvent) {
-                button.setAttribute('disabled', 'true');
-              });
-              button.addEventListener('click', function (clickEvent) {
-                let requireChecked = 0;
-                const checkFields = form.querySelectorAll('.form_checkbox.required');
-                for (let ci = 0; ci < checkFields.length; ci++) {
-                  const field = checkFields[ci];
-                  const checks = field.querySelectorAll('input[type=checkbox]:checked');
-                  if (checks.length === 0) {
-                    requireChecked++;
-                  }
-                }
-                if (isIE || form.reportValidity()) {
-                  if (requireChecked > 0) {
-                    alert(document.getElementById('alert-message').getAttribute('data-alert-message'));
-                    clickEvent.stopPropagation();
-                    clickEvent.preventDefault();
-                  }
-                }
-              }, { passive: false });
-            }</script>
         </div>
       </section>
 
@@ -1172,6 +1084,33 @@
 
 
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $('.custom-form').on('submit', function (e) {
+        e.preventDefault(); // 通常のフォーム送信を止める
+
+        const $form = $(this);
+
+        $.ajax({
+          type: 'POST',
+          url: $form.attr('action'),
+          data: $form.serialize(),
+          success: function (response) {
+            if (response.trim() === 'success') {
+              alert('送信しました');
+              $form[0].reset(); // フォームをリセット
+            } else {
+              alert('送信に失敗しました。必須項目を確認してください。');
+            }
+          },
+          error: function () {
+            alert('エラーが発生しました。しばらくしてからお試しください。');
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 
