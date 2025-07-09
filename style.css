@@ -2874,6 +2874,7 @@ p {
 		margin-left: 25px;
 		margin-right: 0;
 		margin-bottom: 15px;
+		height: auto;
 	}
 
 	.top_label_person .top_person_right::after {
@@ -5880,10 +5881,6 @@ input[type=submit] {
 	.top_label_person.sp_third .top_person_right::after {
 		border-width: 0 22px 118px 0;
 		left: -22px;
-	}
-
-	.top_label_person .top_person_right {
-		height: 118px;
 	}
 
 	.p-about__box {
