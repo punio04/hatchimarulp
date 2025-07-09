@@ -5392,7 +5392,7 @@ input[type=submit] {
 	}
 
 	.prob__lits>li {
-		width: 29em;
+		width: 28em;
 		padding-top: 3em;
 		padding-bottom: 2.5em;
 	}
@@ -5575,7 +5575,7 @@ input[type=submit] {
 
 @media (max-width: 400px) {
 	.prob__lits>li {
-		width: 27em;
+		width: 25em;
 		padding-top: 3em;
 		padding-bottom: 2.5em;
 	}
