@@ -486,7 +486,7 @@ input[type=submit].btn-primary {
 	transform: skew(-10deg);
 	color: #ff6600;
 	font-weight: bolder;
-	text-shadow: 0 0 22px #ffffff40, 0 0 15px #ffffff87, 0 0 26px #ffffffc9;
+	text-shadow: 0 0 22px #ffffff5c, 0 0 15px #ffffff5c, 0 0 26px #ffffff5c;
 }
 
 .red {
