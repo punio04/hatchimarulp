@@ -5529,7 +5529,7 @@ input[type=submit] {
 	.p-about__box {
 		width: 100%;
 		margin: 0rem auto 0;
-		padding: 3rem 1.9rem 14.5rem;
+		padding: 3rem 1.9rem 14.4rem;
 	}
 
 	.p-problem__img01 {
@@ -5833,6 +5833,14 @@ input[type=submit] {
 	}
 }
 
+@media (max-width: 485px) {
+	.p-about__box {
+		width: 100%;
+		margin: 0rem auto 0;
+		padding: 3rem 1.9rem 14.3rem;
+	}
+}
+
 @media (max-width: 480px) {
 	.p-about__pic {
 		width: 14.1rem;
@@ -5918,7 +5926,7 @@ input[type=submit] {
 	.p-about__box {
 		width: 100%;
 		margin: 0rem auto 0;
-		padding: 3rem 1.9rem 15.1rem;
+		padding: 3rem 1.9rem 14.9rem;
 	}
 
 	.p-about__pic {
@@ -5926,6 +5934,21 @@ input[type=submit] {
 		bottom: auto;
 		top: 33rem;
 		right: 1.1rem;
+	}
+}
+
+@media (max-width: 364px) {
+	.p-about__pic {
+		width: 12rem;
+		bottom: auto;
+		top: 36rem;
+		right: 1.1rem;
+	}
+
+	.p-about__box {
+		width: 100%;
+		margin: 0rem auto 0;
+		padding: 3rem 1.9rem 14.8rem;
 	}
 }
 
@@ -5982,7 +6005,7 @@ input[type=submit] {
 	.p-about__box {
 		width: 100%;
 		margin: 0rem auto 0;
-		padding: 3rem 1.9rem 13rem;
+		padding: 3rem 1.9rem 12.8rem;
 	}
 }
 
