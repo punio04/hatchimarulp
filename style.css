@@ -5902,6 +5902,21 @@ input[type=submit] {
 	}
 }
 
+@media (max-width: 381px) {
+	.p-about__box {
+		width: 100%;
+		margin: 0rem auto 0;
+		padding: 3rem 1.9rem 17.3rem;
+	}
+
+	.p-about__pic {
+		width: 14.1rem;
+		bottom: auto;
+		top: 33rem;
+		right: 1.1rem;
+	}
+}
+
 @media (max-width: 375px) {
 	.p-about__pic {
 		width: 14.1rem;
